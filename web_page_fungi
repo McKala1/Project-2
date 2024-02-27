@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungi Friends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #603913;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .mushroom-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .highlight {
+            background-color: #ffe57f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            margin: 10px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #603913;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #451009;
+        }
+        footer {
+            background-color: #603913;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fungi Friends - Discover the Magic of Mushrooms
+    </header>
+    <div class="container">
+        <img class="mushroom-img" src="https://via.placeholder.com/800x400" alt="Mushroom Image">
+        <div class="highlight">
+            <h2>Welcome to Fungi Friends!</h2>
+            <p>Embark on an extraordinary journey into the enchanting world of mushrooms. Here, amidst the hidden wonders of nature, you'll uncover the secrets of fungal kingdoms and witness the awe-inspiring beauty of mycelial networks.</p>
+        </div>
+        <div class="highlight">
+            <h2>Explore the Mysteries</h2>
+            <p>Delve into the rich diversity of mushroom species, from the majestic Fly Agaric to the delicate Morel. Learn about their fascinating life cycles, intricate structures, and remarkable ecological roles.</p>
+        </div>
+        <div class="highlight">
+            <h2>Join the Community</h2>
+            <p>Connect with fellow enthusiasts, seasoned mycologists, and amateur explorers in our vibrant community. Share your discoveries, exchange knowledge, and engage in lively discussions about all things fungi.</p>
+        </div>
+        <div class="quote">
+            "Mushrooms are the Earth's natural magicians, weaving spells of wonder and mystery beneath our feet." - Unknown
+        </div>
+        <h2>Gallery of Marvels</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200" alt="Mushroom 6">
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#">Join Fungi Friends Now!</a>
+        </div>
+        <p>Ready to embark on your mushroom odyssey? Join Fungi Friends today and unlock a world of marvels!</p>
+    </div>
+    <footer>
+        &copy; 2024 Fungi Friends - Enriching Lives Through Mycology
+    </footer>
+</body>
+</html>
