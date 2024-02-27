@@ -1,0 +1,16 @@
+import json
+
+def lambda_handler(event, context):
+    message = event['inputTranscript']
+    response = {
+        "sessionAttributes": event["sessionAttributes"],
+        "dialogAction": {
+            "type": "Close",
+            "fulfillmentState": "Fulfilled",
+            "message": {
+                "contentType": "PlainText",
+                "content": "You said: " + message
+            }
+        }
+    }
+    return response
