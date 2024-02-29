@@ -1,8 +1,8 @@
 import json
-
 import logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
+
 def get_slot_value(slots, slot_name, default_value):
     if slot_name in slots:
         if slots[slot_name] == None:
@@ -12,65 +12,70 @@ def get_slot_value(slots, slot_name, default_value):
     else:
         raise("Slot Name Incorrect")
 
-        def lambda_handler(event, context):
-        """
-        Route the incoming request based on intent.
-        The JSON body of the request is provided in the event slot.
-        """
-        logger.debug('event.bot.name={}'.format(event['bot']['name']))
-        return dispatch(event)
+def identify_a_mushroom(intent_request):
+    """
+    Performs dialog management and fulfillment for identifying a mushroom
+    """
+    # Log the entire intent request
+    logging.debug(f"Intent:\n{intent_request}")
+    session = intent_request['sessionState']
+    intent = session['intent']
+    slots = intent['slots']
+    # Log the slot values
+    logging.debug(f'Slots: {slots}')
 
-    def dispatch(intent_request):
-        """
-        Called when the user specifies an intent for this bot.
-        """
-        logger.debug(f'Intent Request {intent_request}')
-        intent_name = intent_request['sessionState']['intent']['name']
-        # Dispatch to your bot's intent handlers
-        if intent_name == 'To-Identify-A-Mushroom':
-            return identify_a_mushroom(intent_request)
-        raise Exception('Intent with name ' + intent_name + ' not supported')
-
-    def identify_a_mushroom(intent_request):
-        """
-        Performs dialog management and fulfillment for identifying a mushroom
-        """
-        # Log the entire intent request
-        logging.debug(f"Intent:\n{intent_request}")
-        session = intent_request['sessionState']
-        intent = session['intent']
-        slots = intent['slots']
-        # Log the slot values
-        logging.debug(f'Slots: {slots}') (edited) 
-
-        color=get_slot_value(slots, 'Color',"none")
+    color=get_slot_value(slots,'Color',"none")
+    #Add code
+    #
+    confidence=0
+    mushroomType="unknown"
 
 
-
-
-        
     intent['state'] = 'Fulfilled'
-        return {
-            'sessionState': {
-                'dialogAction': {
-                    'type': 'Close'
-                },
-                'intent': intent
+    return {
+        'sessionState': {
+            'dialogAction': {
+                'type': 'Close'
             },
-            'requestAttributes': {},
-            'messages': [
-                {
-                    'contentType': 'PlainText',
-                    'content': f"I'm {confidence}% confident that that mushroom is probably a {mushroomType}."
-                }
-            ]
-        }
+            'intent': intent
+        },
+        'requestAttributes': {},
+        'messages': [
+            {
+                'contentType': 'PlainText',
+                'content': f"I'm {confidence}% confident that that mushroom is probably a {mushroomType}."
+            }
+        ]
+    }
 
-    def get_slot_value(slots, slot_name, default_value):
-        if slot_name in slots:
-            if slots[slot_name] == None:
-                return default_value
-            else:
-                return slots[slot_name]['value']['interpretedValue']
-        else:
-            raise("Slot Name Incorrect")
+def dispatch(intent_request):
+    """
+    Called when the user specifies an intent for this bot.
+    """
+    logger.debug(f'Intent Request {intent_request}')
+    intent_name = intent_request['sessionState']['intent']['name']
+    # Dispatch to your bot's intent handlers
+    if intent_name == 'To-Identify-A-Mushroom':
+        return identify_a_mushroom(intent_request)
+    raise Exception('Intent with name ' + intent_name + ' not supported')
+
+def lambda_handler(event, context):
+    """
+    Route the incoming request based on intent.
+    The JSON body of the request is provided in the event slot.
+    """
+    logger.debug('event.bot.name={}'.format(event['bot']['name']))
+    return dispatch(event)
+
+    response = {
+        "sessionAttributes": event["sessionState"]["sessionAttributes"],
+        "dialogAction": {
+            "type": "Close",
+            "fulfillmentState": "Fulfilled",
+            "message": {
+                "contentType": "PlainText",
+                "content": "You said: " + message
+            }
+        }
+    }
+    return response
