@@ -32,7 +32,7 @@ An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible different
 
 🌐 **Website Integration:**
 To enhance user experience, the AWS Lex Bot was integrated into an HTML/CSS website. The website provides a user-friendly interface for interacting with the bot, allowing users to input mushroom attributes and receive identification results.
-[View website code](/web_page.ipynb)
+[View website code](/web_page_fungi.html)
 
 🛠️ **Steps:**
 1. **Data Preprocessing:** No data cleaning was required given the nature of the dataset. Synthetic noise was introduced to simulate real world conditions.
