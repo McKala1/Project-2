@@ -38,6 +38,7 @@ To enhance user experience, the AWS Lex Bot was integrated into an HTML/CSS webs
 3. **AWS Lex Bot Development:** Create an AWS Lex Bot with appropriate intents, slot types, and Lambda functions for fulfillment logic.
 4. **Website Integration:** Develop an HTML/CSS website with a chat interface to interact with the AWS Lex Bot.
 5. **Deployment:** Deploy the trained Decision Tree model into the AWS Lex Bot on AWS, and integrate the bot into the website. 
+
 🚀 **Usage:**
 1. Clone the repository and set up the environment.
 2. Execute the provided scripts for model training, bot development, and website deployment.
