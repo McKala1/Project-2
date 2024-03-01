@@ -27,10 +27,12 @@ Ultimately the Decision Tree Classifier requiring only 9 values was implemented 
 ![Confusion Matrix for Decision Tree](/Images/Confusion_matrix_decision_tree.png)
 
 💬 **AWS Lex Bot Development:**
-An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and Lambda functions in Python were implemented for bot fulfillment logic.
+An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and Lambda functions in Python were implemented for bot fulfillment logic. 
+[View JSON file for Bot Development](/JASON%20bot)
 
 🌐 **Website Integration:**
 To enhance user experience, the AWS Lex Bot was integrated into an HTML/CSS website. The website provides a user-friendly interface for interacting with the bot, allowing users to input mushroom attributes and receive identification results.
+[View Webpage creation code] (/web_page.ipynb)
 
 🛠️ **Steps:**
 1. **Data Preprocessing:** No data cleaning was required given the nature of the dataset. Synthetic noise was introduced to simulate real world conditions.
