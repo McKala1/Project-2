@@ -8,7 +8,7 @@ This README provides a comprehensive guide on using the Mushroom dataset to trai
 
 📊 **Dataset:**
 The Mushroom dataset contains various attributes of poisonous and edible mushrooms such as cap shape, cap surface, cap color, bruises, odor, gill attachment, gill spacing, etc. It serves as the foundation for training machine learning models to distinguish between edible and poisonous mushrooms.
-[View dataset](/Resources/mushrooms.csv.ipynb)
+[View dataset](/Resources/mushrooms.csv)
 
 📊 **Feature and Class Distributions:**
 Exploratory data analysis was conducted to visualize feature and class distributions. This analysis provided insights into the dataset's characteristics and helped identify patterns or correlations that influence the model's training.
@@ -31,7 +31,7 @@ Ultimately the Decision Tree Classifier requiring only 9 values was implemented 
 
 💬 **AWS Lex Bot Development:**
 An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and Lambda functions in Python were implemented for bot fulfillment logic. 
-[View JSON file for Bot Development](/JASON%20bot)
+[View JSON file for Bot Development](/lambda_function.py)
 
 🌐 **Website Integration:**
 To enhance user experience, the AWS Lex Bot was integrated into an HTML/CSS website. The website provides a user-friendly interface for interacting with the bot, allowing users to input mushroom attributes and receive identification results.
