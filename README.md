@@ -21,11 +21,11 @@ Exploratory data analysis was conducted to visualize feature and class distribut
 ![E and P Graph](/Images/bar%20graph.png)
 
 🔍 **Data Enhancement:**
-The dataset allows for perfect classification of mushrooms as poisonous or edible with simple machine learning models. Given this, we explored adding synthetic noise to the training set to better simulate real world scenarios. We also explored reducing the dimensionality of the data, creating models that only took in 9 characteristics about the mushrooms. Both the models trained on the noisy data and the models trained on the smaller datasets still were able to perfectly predict whether a mushroom is poisonous or edible. 
+The dataset allows for perfect classification of mushrooms as poisonous or edible with simple machine learning models. Given this, we explored adding synthetic noise to the training set to better simulate real world scenarios. We also explored reducing the dimensionality of the data, creating models that only took in 10 characteristics about the mushrooms. Both the models trained on the noisy data and the models trained on the smaller datasets still were able to perfectly predict whether a mushroom is poisonous or edible. 
 [View model development](/Model_Development.ipynb)
 
 🌲 **Decision Tree Classifier:**
-Ultimately the Decision Tree Classifier requiring only 9 values was implemented into the AWS chatbot for user ease and given its perfect predictive capabilities in the training set. It had 100% accuracy in the training and testing set data as well as a precision, recall, and F1-score of 1.00. See the decision tree plotted below and confusion matrix below. Please refer to the kaggle dataset for what each node is referring to in the decision tree plot. 
+Ultimately the Decision Tree Classifier requiring only 10 values was implemented into the AWS chatbot for user ease and given its perfect predictive capabilities in the training set. It had 100% accuracy in the training and testing set data as well as a precision, recall, and F1-score of 1.00. See the decision tree plotted below and confusion matrix below. Please refer to the kaggle dataset for what each node is referring to in the decision tree plot. 
 [View model development](/Model_Development.ipynb)
 
 ![Decision Tree Plot](/Images/Mushrooms_simplified_decision_tree.png)
@@ -33,7 +33,7 @@ Ultimately the Decision Tree Classifier requiring only 9 values was implemented 
 ![Confusion Matrix for Decision Tree](/Images/Confusion_matrix_decision_tree.png)
 
 💬 **AWS Lex Bot Development:**
-An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and Lambda functions in Python were implemented for bot fulfillment logic. 
+An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and a Lambda function in Python was implemented for bot fulfillment logic. 
 [View JSON file for Bot Development](/lambda_function.py)
 
 🌐 **Website Integration:**
@@ -76,5 +76,6 @@ through the Decision Tree model to determine if poisonous or edible.
 - Richard Varos
 - Samuel Neal
 - ChatGPT
+- Simon Kingaby
 
 Feel free to contribute to this project by submitting pull requests or reporting issues. Thank you for using our Mushroom Dataset with Decision Tree Classifier, AWS Lex Bot, and Website Integration!
