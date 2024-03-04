@@ -78,6 +78,5 @@ through the Decision Tree model to determine if poisonous or edible.
 - Richard Varos
 - Samuel Neal
 - ChatGPT
-- Simon Kingaby
 
 Feel free to contribute to this project by submitting pull requests or reporting issues. Thank you for using our Mushroom Dataset with Decision Tree Classifier, AWS Lex Bot, and Website Integration!
