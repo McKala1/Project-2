@@ -1,10 +1,9 @@
 # Project-2
 🍄 **README**
 
-**Presentation**
-https://docs.google.com/presentation/d/1nN8YxwTToLkvmio2Knw1wtoIBOCUM8VnYCGKFXpmyrs/edit?usp=sharing
+[**Presentation**](https://docs.google.com/presentation/d/1nN8YxwTToLkvmio2Knw1wtoIBOCUM8VnYCGKFXpmyrs/edit?usp=sharing)
 
-**AWS Lex Bot UI Link**
+[**AWS Lex Bot UI Link**]()
 
 
 🌟 **Using Mushroom Dataset to Train Machine Learning Models to Predict if Mushrooms are Edible or Poisonous with integration into an AWS Lex Bot and Website**
