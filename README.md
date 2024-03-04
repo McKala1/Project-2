@@ -5,7 +5,7 @@
 
 [**Presentation**](https://docs.google.com/presentation/d/1nN8YxwTToLkvmio2Knw1wtoIBOCUM8VnYCGKFXpmyrs/edit?usp=sharing)
 
-[**AWS Lex Bot UI Link**]()
+[**AWS Lex Bot UI Link**](https://d25g35heozlgwn.cloudfront.net/index.html)
 
 📝 **Introduction:**
 This README provides a comprehensive guide on using the Mushroom dataset to train machine learning models to predict if a mushroom is poisonous or edible, to implement a model into an AWS Lex Bot for mushroom identification, and to integrate the chatbot into an HTML/CSS website for user interaction.
