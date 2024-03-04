@@ -80,6 +80,22 @@
             50% { transform: scale(1); }
             100% { transform: scale(0.9); }
         }
+  	 /* Define a class for the element that will have the animation */
+        .pulse-element {
+            animation: pulseAnimation 2s infinite; /* Apply the animation */
+            /* Add other styles for the element */
+            /* For example: */
+            display: inline-block;
+            color: blue;
+            text-decoration: underline;
+        }
+   	 </style>
+	</head>
+	<body>
+   	 <!-- Use the a tag to create a clickable link -->
+    	<a href="https://d25g35heozlgwn.cloudfront.net/index.html" class="pulse-element">	Clickable Link</a>
+	</body>
+	</html>
         section {
             padding: 20px;
         }
