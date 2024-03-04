@@ -69,7 +69,7 @@ through the Decision Tree model to determine if poisonous or edible.
 - [Mushroom Dataset on Kaggle](https://www.kaggle.com/uciml/mushroom-classification)
 - [AWS Lex Documentation](https://docs.aws.amazon.com/lex/index.html)
 - [HTML/CSS Tutorials](https://www.w3schools.com/html/) and [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [AWS Lex Web UI Generation Guide] (https://github.com/aws-samples/aws-lex-web-ui)
+- [AWS Lex Web UI Generation Guide](https://github.com/aws-samples/aws-lex-web-ui)
 
 🙌 **Contributors:**
 - John Parente Jr. 
