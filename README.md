@@ -34,7 +34,7 @@ Ultimately the Decision Tree Classifier requiring only 10 values was implemented
 ![Confusion Matrix for Decision Tree](/Images/Confusion_matrix_decision_tree.png)
 
 💬 **AWS Lex Bot Development:**
-An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and a Lambda function in Python was implemented for bot fulfillment logic. 
+An AWS Lex Bot was created to facilitate mushroom poisonous vs. edible differentiation through user interaction. Intents and slot types were defined for mushroom attributes, and a Lambda function in Python was implemented for bot fulfillment logic. After adding in lambda code, we had to add our JSON response and make a title for that. We also had to add and remove lines to make sure sklearn was not being deployed untill we got into the Docker container. To make sure there were so errors with my lambda code, I used CloudWatch after each run to view the mistakes and fix them. With my JSON for example, I had to put it in a new VScode window and replace all the ' with ". I also had to connect an Alies in my Lex for English and would test out my model after fixing each mistake. 
 [View JSON file for Bot Development](/lambda_function.py)
 
 🌐 **Website Integration:**
@@ -80,3 +80,7 @@ through the Decision Tree model to determine if poisonous or edible.
 - ChatGPT
 
 Feel free to contribute to this project by submitting pull requests or reporting issues. Thank you for using our Mushroom Dataset with Decision Tree Classifier, AWS Lex Bot, and Website Integration!
+
+
+
+
