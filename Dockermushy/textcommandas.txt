@@ -1,0 +1,5 @@
+docker build -t dockermushycontainer .
+aws ecr create-repository --repository-name mushy  --image-scanning-configuration scanOnPush=true --image-tag-mutability MUTABLE
+docker tag dockermushycontainer:latest 211125600953.dkr.ecr.us-east-1.amazonaws.com/mushy:latest
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 211125600953.dkr.ecr.us-east-1.amazonaws.com
+docker push 211125600953.dkr.ecr.us-east-1.amazonaws.com/mushy:latest
