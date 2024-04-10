@@ -3,6 +3,9 @@ import json
 import logging
 import pandas as pd
 import sklearn
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.preprocessing import OneHotEncoder
+
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
@@ -16,7 +19,7 @@ def get_slot_value(slots, slot_name, default_value):
         raise("Slot Name Incorrect")
 
 def loadmodel():
-    return pickle.load(open("mymodel.sav",'rb'))
+    return pickle.load(open("OneHotEncoder.sav",'rb')),pickle.load(open("DecisionTreeClassifier.sav",'rb'))
 
 def fix_cap_shape(cap_shape):
     # The cap-shape column has 6 unique values: b, c, f, k, s, x
@@ -250,7 +253,8 @@ def identify_a_mushroom(intent_request):
         stalkrootshape, sporeprintcolor, mushroomcapsurface, mushroomcapshape,
         odor, stalksurfaceabovering)
 
-    model=loadmodel()
+    ohe,model=loadmodel()
+    # xs=ohe.transform(X)
     ypred=model.predict(X)
     # ypred=1
     if ypred == 1:
